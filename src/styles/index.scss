@@ -422,6 +422,7 @@ input[type=file] {
 
 .el-tabs__item > span {
   padding: 0 6px;
+  line-height: 46px;
 }
 
 .el-form {
@@ -505,11 +506,7 @@ $tooltip-arrow-color: #c2d1e1;
 .el-button.el-button--default.help-msg-btn {
   padding: 5px;
   border: none;
-
-  &:hover {
-    background-color: white !important;
-  }
-
+  background-color: transparent;
   i {
     color: var(--color-info);
     opacity: 1;

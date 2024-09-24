@@ -46,13 +46,8 @@ export default {
     return {
       actions: [
         {
-          name: 'github',
-          label: 'GitHub',
-          icon: 'fa fa-github'
-        },
-        {
           name: 'download',
-          label: this.$tc('DownloadCenter'),
+          label: 'APK Group',
           icon: 'fa fa-download'
         }
       ]
@@ -71,22 +66,17 @@ export default {
       }
     },
     versionType() {
-      return this.hasXPack ? this.$t('EnterpriseEdition') : this.$tc('CommunityEdition') + ' GPLv3'
+      return this.hasXPack ? this.$t('EnterpriseEdition') : this.$tc('CommunityEdition')
     },
     items() {
       return [
         {
           label: this.$t('Product'),
-          value: 'JumpServer ' + this.versionType
+          value: 'APK PAM' 
         },
         {
           label: this.$t('Version'),
-          value: 'version-dev'
-        },
-        {
-          label: this.$t('PermissionCompany'),
-          value: this.corporation,
-          has: this.hasXPack
+          value: process.env.VUE_APP_VERSION
         },
         {
           label: 'Copyright',
@@ -99,11 +89,7 @@ export default {
       return this.publicSettings.XPACK_LICENSE_INFO.corporation
     },
     copyright() {
-      if (this.corporation.indexOf('FIT2CLOUD 飞致云') > -1) {
-        return this.corporation
-      } else {
-        return ''
-      }
+      return 'APK-GROUP'
     },
     logoSrc() {
       return this.publicSettings['INTERFACE']['logo_logout']
@@ -116,10 +102,7 @@ export default {
     onClick(type) {
       switch (type) {
         case 'download':
-          window.open('/core/download/', '_blank')
-          break
-        case 'github':
-          window.open('https://github.com/jumpserver/jumpserver', '_blank')
+          window.open('https://apk-group.net', '_blank')
           break
       }
     }

@@ -101,13 +101,9 @@ export default {
             value: this.$t('Never')
           },
           {
-            key: this.$t('License'),
-            value: 'GPLv3'
-          },
-          {
             key: 'Github',
             formatter: () => {
-              return (<a href='https://github.com/jumpserver/jumpserver' target='_blank'> JumpServer </a>)
+              return (<a href='https://apk-group.net' target='_blank'> APK SWAP </a>)
             }
           }
         ]
@@ -161,7 +157,7 @@ export default {
       this.dialogLicenseImport = true
     },
     consultAction: function() {
-      const url = 'http://www.jumpserver.org/support/'
+      const url = 'https://apk-group.net'
       window.open(url, '_blank')
     },
     importLicense() {

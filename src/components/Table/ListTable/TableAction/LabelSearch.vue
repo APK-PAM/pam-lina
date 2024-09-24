@@ -201,7 +201,7 @@ export default {
   }
 
   ::v-deep .svg-icon {
-    color: var(--color-icon-primary) !important;
+    color: #303133 !important;
   }
 }
 </style>

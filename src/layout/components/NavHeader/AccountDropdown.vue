@@ -79,7 +79,7 @@ export default {
 <style lang="scss" scoped>
   .header-profile {
     .el-dropdown {
-      color: #fff;
+      color: #303133;
     }
   }
 

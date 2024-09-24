@@ -202,7 +202,7 @@ $hover-border-color: #d2d2d2;
           color: var(--menu-text-active) !important;
 
           .svg-icon {
-            color: var(--menu-text-active) !important;
+            color: #fff !important;
           }
         }
       }

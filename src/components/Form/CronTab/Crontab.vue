@@ -498,9 +498,7 @@ export default {
 }
 
 .tab-page {
-  ::v-deep .page-heading {
-    border-bottom: none;
-  }
+
 
   ::v-deep .page-content {
     overflow-y: hidden;

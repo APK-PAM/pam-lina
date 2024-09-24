@@ -3,17 +3,7 @@
 $icon-width: 1.1em;
 $single-menu-height: 38px;
 
-@mixin only_active {
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: var(--menu-text-active);
-  }
-}
+
 
 @mixin collapse-active {
   background-color: #e6e6e6;
@@ -56,11 +46,15 @@ $single-menu-height: 38px;
     min-width: 200px;
 
     &.is-active {
-      background-color: var(--menu-hover);
-      @include only_active;
+      background-color: #f95353;
+      color: #fff;
+
+      .icons{
+        color: #fff;
+      }
 
       span {
-        color: var(--color-primary);
+        color: #fff;
       }
     }
   }
@@ -89,12 +83,10 @@ $single-menu-height: 38px;
 
         &.el-submenu.is-active {
           .el-submenu__title {
-            color: var(--color-primary);
+            color: #f95353;
           }
 
-          .el-submenu__title, li {
-            @include only_active
-          }
+        
         }
 
         .el-menu--inline .nest-menu .el-menu-item {
