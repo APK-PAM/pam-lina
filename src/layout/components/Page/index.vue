@@ -139,6 +139,7 @@ export default {
 .go-back {
   border: none;
   padding: 6px;
+  background: transparent !important;
 }
 
 .go-back ::v-deep i {

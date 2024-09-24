@@ -75,7 +75,7 @@
                   <li class="el-upload-list__item is-ready" tabindex="0">
                     <a :style="sameFileStyle(file)" class="el-upload-list__item-name">
                       <i class="el-icon-document" />{{ file.name }}
-                      <i style="color: #1ab394;float: right;font-weight:normal">
+                      <i style="color: #2756FF;float: right;font-weight:normal">
                         {{ formatFileSize(file.size) }}
                         <i class="el-icon-close" @click="removeFile(file)" />
                       </i>

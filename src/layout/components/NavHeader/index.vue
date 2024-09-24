@@ -24,9 +24,6 @@
       <li class="header-item active-menu">
         <Help />
       </li>
-      <li class="header-item">
-        <Language />
-      </li>
       <li class="header-item header-profile">
         <AccountDropdown />
       </li>
@@ -106,7 +103,7 @@ export default {
   .navbar {
     position: relative;
     overflow: hidden;
-    background-color: var(--banner-bg);
+    background-color: #ffffff;
 
     ul {
       margin: 0;
@@ -126,7 +123,7 @@ export default {
       border-radius: 5px;
       border-color: $--color-primary;
       background-color: white;
-      color: var(--text-primary);
+      color: $--color-text-primary;
       cursor: pointer;
       transition: .2s;
       opacity: 0.7;
@@ -184,7 +181,7 @@ export default {
 
         // 未找到与之对应的
         & ::v-deep .svg-icon {
-          color: #FFF !important;
+          color: $--color-text-primary!important;
         }
       }
     }
@@ -203,7 +200,7 @@ export default {
 
         & ::v-deep .svg-icon {
           line-height: 40px;
-          color: #FFF !important;
+          color: $--color-text-primary !important;
           font-size: 15px;
         }
 
@@ -215,7 +212,7 @@ export default {
           }
 
           .el-badge__content--primary {
-            background-color: #fff;
+            background-color: var(--color-primary);
           }
 
           .el-badge__content {
@@ -223,12 +220,12 @@ export default {
             height: 15px;
             line-height: 15px;
             border: none;
-            color: var(--color-primary);
+            color: #fff;
           }
         }
 
         & ::v-deep i {
-          color: #FFF;
+          color: #303133;
           font-size: 16px;
 
           &.el-icon-arrow-down {

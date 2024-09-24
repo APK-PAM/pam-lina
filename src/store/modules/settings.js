@@ -65,7 +65,7 @@ const actions = {
         resolve(response)
       }).catch(error => {
         if (error.response && error.response.status === 400) {
-          alert('自 v3.6 版本开始，要求配置可信任域名或主机，否则无法正常使用, 查看: https://github.com/jumpserver/jumpserver/releases/tag/v3.6.0')
+          // alert('自 v3.6 版本开始，要求配置可信任域名或主机，否则无法正常使用, 查看: https://github.com/jumpserver/jumpserver/releases/tag/v3.6.0')
         }
         reject(error)
       })

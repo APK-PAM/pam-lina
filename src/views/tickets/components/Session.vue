@@ -28,7 +28,7 @@
         </el-col>
         <el-col>
           <span class="item-label">{{ $t('SessionState') }}：</span>
-          <span :style="{ 'background': session.is_finished ? '#ed5565' : '#1ab394' }" class="item-value cur-color" />
+          <span :style="{ 'background': session.is_finished ? '#ed5565' : '#2756ff' }" class="item-value cur-color" />
         </el-col>
       </el-row>
     </div>

@@ -148,9 +148,6 @@ export default {
     line-height: 28px;
     padding: 4px 24px;
 
-    &:hover {
-      background-color: var(--menu-hover);
-    }
   }
 }
 
@@ -160,13 +157,7 @@ export default {
   text-align: center;
   height: 70px;
 
-  &:hover {
-    color: inherit;
 
-    i {
-      color: inherit;
-    }
-  }
 
   &:first-child {
     margin-left: 16px;

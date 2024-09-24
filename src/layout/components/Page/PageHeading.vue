@@ -51,8 +51,9 @@ $origin-color: #ffffff;
   display: flex;
   align-items: center;
   height: 50px;
-  background-color: $origin-color;
+  background-color: transparent;
   border-bottom: 1px solid rgba(31, 35, 41, .15);
+  margin-bottom: 20px;
 
   .el-row {
     width: 100%;

@@ -67,15 +67,16 @@ export default {
       }
     },
     changeMomentLang() {
-      if (this.currentLang.code.indexOf('en') > -1) {
-        this.$moment.locale('en')
-      } else if (this.currentLang.code.indexOf('ja') > -1) {
-        this.$moment.locale('ja')
-      } else if (this.currentLang.code.indexOf('zh_hant') > -1) {
-        this.$moment.locale('zh-tw')
-      } else {
-        this.$moment.locale('zh-cn')
-      }
+      this.$moment.locale('en')
+      // if (this.currentLang.code.indexOf('en') > -1) {
+      //   this.$moment.locale('en')
+      // } else if (this.currentLang.code.indexOf('ja') > -1) {
+      //   this.$moment.locale('ja')
+      // } else if (this.currentLang.code.indexOf('zh_hant') > -1) {
+      //   this.$moment.locale('zh-tw')
+      // } else {
+      //   this.$moment.locale('zh-cn')
+      // }
     },
     changeLangTo(item) {
       this.$axios.get(`/core/i18n/${item.cookieCode}/`).then(() => {

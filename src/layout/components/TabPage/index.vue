@@ -167,7 +167,7 @@ export default {
 <style lang='scss' scoped>
 
 .page-submenu ::v-deep .el-tabs__header {
-  background-color: white;
+  // background-color: white;
   margin-top: -10px;
   padding: 0 30px;
   margin-bottom: 5px;
@@ -188,9 +188,6 @@ export default {
 }
 
 .tab-page {
-  ::v-deep .page-heading {
-    border-bottom: none;
-  }
 
   ::v-deep .page-content {
     overflow-y: hidden;

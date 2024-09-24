@@ -68,7 +68,7 @@ export default {
           path: `${BASE_URL}/koko/elfinder/sftp/`,
           name: '',
           meta: {
-            title: i18n.t('FileExplorer'),
+            title: 'File Manager',
             activeMenu: '/assets',
             icon: 'fa-external-link',
             external: true,
