@@ -103,7 +103,7 @@ export default {
           {
             key: 'Github',
             formatter: () => {
-              return (<a href='https://apk-group.net' target='_blank'> APK SWAP </a>)
+              return (<a href='https://apk-group.net' target='_blank'> APK PAM </a>)
             }
           }
         ]

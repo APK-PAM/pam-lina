@@ -80,7 +80,9 @@ export default {
     height: 100%;
     width: 100%;
     padding: 5px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     & .sidebar-logo {
       width: 32px;
@@ -90,7 +92,7 @@ export default {
     }
 
     & .sidebar-logo-text {
-      height: calc(#{$headerHeight} - 10px);
+      height: 48px;
     }
 
     & .sidebar-title {
